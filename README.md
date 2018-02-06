@@ -26,3 +26,9 @@ Please review our [contribution guidelines](https://github.com/wordplate/framewo
 ## License
 
 [MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
+
+/_ personnal install _/
+Install eslint airbnb
+
+> export PKG=eslint-config-airbnb;
+> npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
